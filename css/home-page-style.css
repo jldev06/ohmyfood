@@ -22,7 +22,7 @@ body {
     width: 100%;
     background-color: black;
     animation-name: loader;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
     animation-timing-function: linear;
     animation-direction: normal;
     animation-fill-mode: both;
@@ -67,10 +67,12 @@ body {
 .text {
     display: flex;
     position: fixed;
+    height: 120px;
+    width: 120px;
     font-family: 'Shrikhand', cursive;
-    font-size: medium;
+    font-size: larger;
     color: white;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 10px;
     justify-content: center;
     align-items: center;
@@ -367,16 +369,27 @@ main {
     display: flex;
     width: 40%;
     justify-content: right;
-    align-items: center;
+    padding-top: 20px;
+    padding-right: 25px;
 }
 
-.fa-heart {
-    display: flex;
-    padding-right: 30px;
-    font-size: 22px;
-    font-weight: lighter;
-    overflow: hidden;
+.far.fa-heart {
+    position: absolute;
+    font-size: 24px;
+    opacity: 1;
+}
+
+.fas.fa-heart {
     position: relative;
+    font-size: 24px;
+    opacity: 0;
+}
+
+.fas.fa-heart:hover {
+    opacity: 1;
+    color: rgb(198, 103, 219);
+    cursor: pointer;
+    transition: all 3s;
 }
 
 footer {
