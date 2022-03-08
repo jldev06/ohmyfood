@@ -1,15 +1,20 @@
+/*...........................................page restaurant Mobile..................................*/
+
 * {
     box-sizing: border-box;
 }
 
 body {
     display: flex;
-    height: 1667px;
+    height: auto;
     padding: 0;
     margin: 0;
     flex-direction: column;
     overflow-x: hidden;
 }
+
+
+/*...........................header.....................Header............*/
 
 header {
     display: flex;
@@ -34,6 +39,9 @@ h2 {
     font-size: 26px;
 }
 
+
+/*...........................main.......................main.....................*/
+
 main {
     display: flex;
     width: 100%;
@@ -46,7 +54,7 @@ main {
 main.more-starters {
     display: flex;
     width: 100%;
-    height: 1470px;
+    height: 1530px;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
@@ -82,15 +90,15 @@ main.more-starters {
 .more-starters-restaurant-menu {
     display: flex;
     position: relative;
-    background-color: rgb(246, 246, 246);
     width: 100%;
-    height: 1055px;
+    height: 1155px;
     flex-direction: column;
     margin-top: -40px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding-left: 4%;
     padding-right: 4%;
+    background-color: rgb(246, 246, 246);
 }
 
 .restaurant-title {
@@ -143,7 +151,7 @@ main.more-starters {
 
 .more-starters-menu-container {
     display: flex;
-    height: 980px;
+    height: 1090px;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -160,7 +168,7 @@ article {
 .more-starters-article {
     display: flex;
     width: 100%;
-    height: 42%;
+    height: 38%;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -245,6 +253,7 @@ article {
     background: linear-gradient( #FF79DA, #9356dc);
     box-shadow: 5px 5px 10px rgb(212, 212, 212);
     color: white;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -253,9 +262,12 @@ article {
     box-shadow: 5px 5px 1px rgb(212, 212, 212);
 }
 
+
+/*......................Footer..............................Footer.................*/
+
 footer {
     display: flex;
-    height: 210px;
+    height: 200px;
     flex-direction: column;
     padding-left: 20px;
     padding-top: 5px;
@@ -292,7 +304,14 @@ li {
     padding-left: 10px;
 }
 
+.fas.fa-handshake {
+    transform: rotate(-45deg);
+}
+
 .footer-link {
     text-decoration: none;
     color: white;
 }
+
+
+/*...........................................page restaurant Desktop..................................*/

@@ -1,4 +1,4 @@
-/*..............*/
+/*...........................................home page Mobile..................................*/
 
 * {
     box-sizing: border-box;
@@ -6,12 +6,15 @@
 
 body {
     display: flex;
-    height: 2250px;
+    height: auto;
     margin: 0;
     padding: 0;
     flex-direction: column;
     overflow-x: hidden;
 }
+
+
+/*.............................Loader.................................*/
 
 .loader-container {
     display: flex;
@@ -22,7 +25,7 @@ body {
     width: 100%;
     background-color: black;
     animation-name: loader;
-    animation-duration: 1.2s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-direction: normal;
     animation-fill-mode: both;
@@ -78,6 +81,9 @@ body {
     align-items: center;
 }
 
+
+/*...........................header.....................Header............*/
+
 header {
     display: flex;
     width: 100%;
@@ -93,6 +99,9 @@ h2 {
     font-size: 30px;
 }
 
+
+/*...........................main.......................main.....................*/
+
 main {
     display: flex;
     width: 100%;
@@ -102,6 +111,9 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
+
+/*..................section1 search info explorer..................*/
+
 .section1 {
     height: 337px;
     flex-direction: column;
@@ -110,11 +122,20 @@ main {
     background-color: rgb(246, 246, 246);
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .search-bloc {
     display: flex;
     height: 50px;
+    width: 100%;
     margin: 0;
     justify-content: center;
+    align-content: center;
+    padding-left: 50px;
     background-color: rgb(234, 234, 234);
     border-top: 3px solid rgb(220, 220, 220);
 }
@@ -129,7 +150,7 @@ main {
     display: flex;
     padding-left: 15px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     border: transparent;
     background-color: rgb(234, 234, 234);
 }
@@ -178,6 +199,7 @@ main {
     background: linear-gradient( #FF79DA, #9356dc);
     box-shadow: 5px 5px 10px rgb(212, 212, 212);
     color: white;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -185,6 +207,9 @@ main {
     opacity: 0.8;
     box-shadow: 5px 5px 1px rgb(212, 212, 212);
 }
+
+
+/*..................section2 Function..................*/
 
 .section2 {
     display: flex;
@@ -201,7 +226,7 @@ main {
 
 .functions-bloc {
     display: flex;
-    height: 63%;
+    height: 65%;
     padding-left: 5px;
     flex-direction: column;
     justify-content: space-between;
@@ -264,6 +289,9 @@ main {
     color: #9356dc;
 }
 
+
+/*..................section3 restaurant..................*/
+
 .section3 {
     display: flex;
     flex-direction: column;
@@ -281,7 +309,7 @@ main {
 
 .cards-container {
     display: flex;
-    height: 88%;
+    height: 87%;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -392,9 +420,12 @@ main {
     transition: all 3s;
 }
 
+
+/*......................Footer..............................Footer.................*/
+
 footer {
     display: flex;
-    height: 210px;
+    height: 200px;
     flex-direction: column;
     padding-left: 20px;
     padding-top: 5px;
@@ -431,7 +462,14 @@ li {
     padding-left: 10px;
 }
 
+.fas.fa-handshake {
+    transform: rotate(-45deg);
+}
+
 .footer-link {
     text-decoration: none;
     color: white;
 }
+
+
+/*..............................home page desktop....................home page desktop........................*/
