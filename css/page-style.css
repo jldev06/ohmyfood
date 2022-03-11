@@ -164,10 +164,10 @@ article {
     flex-direction: column;
     justify-content: space-between;
     animation-name: slide;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-timing-function: ease-in-out;
     animation-direction: normal;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
     animation-delay: 0.3s;
 }
 
@@ -184,15 +184,16 @@ article {
         opacity: 0.2;
         height: 30%;
     }
-    50% {
-        opacity: 0.5;
-        height: 50%;
+    40% {
+        opacity: 1;
+        height: 40%;
     }
-    70% {
-        opacity: 0.7;
+    50% {
         height: 70%;
     }
-    100% {}
+    70% {
+        height: 80%;
+    }
 }
 
 .more-starters-article {
@@ -217,25 +218,68 @@ article {
 .dish-container {
     display: flex;
     width: 100%;
-    height: 70px;
+    height: 68px;
     flex-direction: row;
-    justify-content: space-between;
     background-color: white;
     border-radius: 20px;
     align-items: flex-end;
-    padding-bottom: 10px;
-    padding-top: 15px;
+    padding-bottom: 0;
     box-shadow: 5px 5px 5px rgb(232 232 232);
+    cursor: pointer;
+}
+
+.dish-container:hover .rolling-shutter {
+    animation: rolling 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60px;
+    background-color: aquamarine;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dish-container:hover .fas.fa-check {
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+    animation: rotation 0.5s;
+}
+
+@keyframes rolling {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60px;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .dish-text {
     display: flex;
-    max-width: 80%;
+    width: 90%;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
     padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 15px;
 }
 
 .dish-title {
@@ -260,8 +304,20 @@ article {
 .dish-price {
     display: flex;
     font-weight: bold;
-    padding-right: 20px;
+    justify-content: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 15px;
 }
+
+.rolling-shutter {
+    display: none;
+}
+
+.fas.fa-check {
+    display: none;
+}
+
 
 .restaurant-calltoaction {
     display: flex;
