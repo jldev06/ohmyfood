@@ -539,28 +539,51 @@
       .section3 {
           display: flex;
           flex-direction: column;
-          height: 820px;
+          align-items: center;
+          justify-content: center;
+          height: 860px;
+          padding-left: 0;
+          padding-right: 0;
       }
       .section3-title {
           display: flex;
           align-items: center;
           justify-content: center;
           margin-block-end: 30px;
+          padding-top: 0;
       }
       .cards-container {
           display: flex;
-          height: 87%;
+          height: 90%;
+          width: 80%;
           flex-direction: row;
           justify-content: space-around;
           flex-wrap: wrap;
       }
       .card-link {
           display: flex;
-          width: 40%;
-          height: 300px;
+          width: 42%;
+          height: 340px;
       }
       .card-image-container {
           display: flex;
-          height: 230px;
+          height: 270px;
+      }
+      footer {
+          display: flex;
+          height: 120px;
+          padding-left: 0;
+          padding-top: 0;
+      }
+      .footer-title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .footer-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 100%;
       }
   }
