@@ -491,3 +491,57 @@ li {
         width: 100%;
     }
 }
+
+
+/*...........................................home page tablette.................................*/
+
+@media screen and (min-width: 768px) and (max-width :991px) {
+    main {
+        display: flex;
+        height: auto;
+    }
+    main.more-starters {
+        display: flex;
+        height: auto;
+    }
+    .restaurant-image-container {
+        display: flex;
+        height: 320px;
+    }
+    .restaurant-title {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    .menu-container {
+        display: flex;
+        height: 1100px;
+        align-items: center;
+    }
+    .dish-container {
+        display: flex;
+        width: 65%;
+    }
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer {
+        display: flex;
+        height: 120px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .footer-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
