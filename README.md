@@ -27,7 +27,11 @@ Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton re
 à le convaincre, avec 3 autres, de déposer leurs cartes en ligne ! Je t’envoie le dossier avec les 4
 menus dans l’après-midi. À toi de jouer, maintenant !
 Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps. Voici le brief
+( https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Brief+cr%C3%A9atif+site+Ohmyfood.pdf )
 que vous établissez avec le CTO, Paul.
+
+
+
 De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie les maquettes du site.
 
 Pour ce projet, vous versionnez tout votre code sur Github avec des commits réguliers pour suivre son
